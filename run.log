@@ -8,3 +8,45 @@
 {"level":"error","msg":"[错误]","time":"2021-11-26T18:09:42+08:00"}
 {"level":"info","msg":"啊这","time":"2021-11-26T18:22:07+08:00"}
 {"level":"error","msg":"错误","time":"2021-11-26T18:22:07+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T09:55:36+08:00"}
+{"level":"error","msg":"redis: can't marshal db.User (implement encoding.BinaryMarshaler)","time":"2021-12-08T09:55:36+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:13:53+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:13:53+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:21:22+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:21:22+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:21:57+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:21:57+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:23:14+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:23:14+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:24:46+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:24:46+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:25:04+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:25:04+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:26:51+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:26:51+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:27:08+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:27:08+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:31:15+08:00"}
+{"level":"error","msg":"redis: can't marshal db.User (implement encoding.BinaryMarshaler)","time":"2021-12-08T10:31:15+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:31:28+08:00"}
+{"level":"error","msg":"redis: can't marshal db.User (implement encoding.BinaryMarshaler)","time":"2021-12-08T10:31:28+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:34:06+08:00"}
+{"level":"info","msg":"User 123456 added","time":"2021-12-08T10:34:06+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T10:34:29+08:00"}
+{"level":"info","msg":"User 12356 added","time":"2021-12-08T10:34:29+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T11:08:30+08:00"}
+{"level":"info","msg":"User 12356 added","time":"2021-12-08T11:08:30+08:00"}
+{"level":"error","msg":"redis: nil","time":"2021-12-08T11:08:30+08:00"}
+{"level":"info","msg":"Fail to get user","time":"2021-12-08T11:08:30+08:00"}
+{"level":"error","msg":"unexpected end of JSON input","time":"2021-12-08T11:08:30+08:00"}
+{"level":"info","msg":"Fail to parse user json","time":"2021-12-08T11:08:30+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T11:09:28+08:00"}
+{"level":"info","msg":"User 12356 added","time":"2021-12-08T11:09:28+08:00"}
+{"level":"error","msg":"json: Unmarshal(nil *db.User)","time":"2021-12-08T11:09:28+08:00"}
+{"level":"info","msg":"Fail to parse user json","time":"2021-12-08T11:09:28+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T11:10:09+08:00"}
+{"level":"info","msg":"User 12356 added","time":"2021-12-08T11:10:09+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T11:10:35+08:00"}
+{"level":"info","msg":"User 12356 added","time":"2021-12-08T11:10:35+08:00"}
+{"level":"info","msg":"Connected successfully to redis","time":"2021-12-08T11:13:08+08:00"}
+{"level":"info","msg":"User 12356 added","time":"2021-12-08T11:13:08+08:00"}

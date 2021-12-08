@@ -4,14 +4,14 @@
     "url": "https://api.github.com/graphql"
   },
   "database": {
-    "name": "test",
-    "url": "mongodb://mongo:27017/"
+    "name": "redis",
+    "url": "localhost:6379"
   },
   "telegram": {
     "token": "",
     "proxy": ""
   },
-  "admin": "",
+  "admin": "123456",
   "updateInterval": 300,
   "logPath": "run.log"
 }

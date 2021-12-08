@@ -1,10 +1,12 @@
 package main
 
 import (
-	"GitfyBot/internal/logger"
+	"GitfyBot/internal/db"
+	"fmt"
 )
 
 func main() {
-	logger.Info("啊这")
-	logger.Error("错误")
+	db.AddUser("12356")
+	user := db.GetUser("12356")
+	fmt.Println(user.Id)
 }

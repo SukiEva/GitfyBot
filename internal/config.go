@@ -1,4 +1,4 @@
-package utils
+package internal
 
 import (
 	"encoding/json"
@@ -27,7 +27,13 @@ var Config App
 
 func init() {
 	fileData, err := ioutil.ReadFile("configs/config.json")
-	DropErr(err)
+	dropErr(err)
 	err = json.Unmarshal(fileData, &Config)
-	DropErr(err)
+	dropErr(err)
+}
+
+func dropErr(e error) {
+	if e != nil {
+		panic(e)
+	}
 }
