@@ -21,10 +21,10 @@ type Tag struct {
 }
 
 type Repo struct {
+	From         string          `json:"from"`
 	Owner        string          `json:"owner"`
 	Name         string          `json:"name"`
 	Tags         []Tag           `json:"tags"`
-	Releases     []Release       `json:"releases"`
 	WatchedUsers map[string]bool `json:"watched_users"`
 }
 

@@ -37,6 +37,10 @@ func dropErr(e error) bool {
 
 func GetUser(userId string) *User {
 	result, err := rdb.HGet(ctx, "users", userId).Result()
+	if err == redis.Nil {
+		logger.Info("UserId not exists")
+		return nil
+	}
 	if dropErr(err) {
 		logger.Info("Fail to get user")
 		return nil
@@ -59,8 +63,12 @@ func updateUser(user *User) bool {
 	return true
 }
 
-func getRepo(owner, name string) *Repo {
-	result, err := rdb.HGet(ctx, "repos", owner+":"+name).Result()
+func getRepo(from, owner, name string) *Repo {
+	result, err := rdb.HGet(ctx, "repos", from+":"+owner+":"+name).Result()
+	if err == redis.Nil {
+		logger.Info(from + ":" + owner + ":" + name + " not exists")
+		return nil
+	}
 	if dropErr(err) {
 		logger.Info("Fail to get repo")
 		return nil
@@ -75,7 +83,7 @@ func getRepo(owner, name string) *Repo {
 }
 
 func updateRepo(repo *Repo) bool {
-	_, err := rdb.HSet(ctx, "repos", repo.Owner+":"+repo.Name, repo.MarshalBinary()).Result()
+	_, err := rdb.HSet(ctx, "repos", repo.From+":"+repo.Owner+":"+repo.Name, repo.MarshalBinary()).Result()
 	if dropErr(err) {
 		logger.Info("Fail to update repo")
 		return false
